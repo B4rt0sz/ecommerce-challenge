@@ -4,6 +4,7 @@
 :root {
   --default-font: 'Poppins', sans-serif;
   --primary-txt: #000000;
+  --gray-bgc: #eff0f5;
 }
 
 body {
@@ -14,9 +15,15 @@ body {
 .wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
   width: 100vw;
   height: 100vh;
   color: var(--primary-txt);
+
+  .container {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+  }
 }

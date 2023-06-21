@@ -1,0 +1,24 @@
+.topBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-bgc);
+
+  &__mobile {
+    min-height: 50px;
+    padding: 0 40px 0 40px;
+  }
+  &__desktop {
+    min-height: 35.59px;
+  }
+
+  &__textMobile {
+    font-size: 13px;
+    line-height: 19.5px;
+    text-align: center;
+  }
+  &__textDesktop {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
