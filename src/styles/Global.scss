@@ -1,0 +1,22 @@
+@import './reset';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --default-font: 'Poppins', sans-serif;
+  --primary-txt: #000000;
+}
+
+body {
+  font-family: var(--default-font);
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: var(--primary-txt);
+}
