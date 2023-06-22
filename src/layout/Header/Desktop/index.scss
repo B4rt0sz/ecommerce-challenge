@@ -1,0 +1,119 @@
+.header__desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 89.5px;
+  padding: 25px 10px 30px 10px;
+
+  &-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+  }
+
+  &Logo {
+    flex-grow: 3;
+  }
+
+  &Search {
+    position: relative;
+    flex-grow: 1;
+
+    &-text {
+      width: 339px;
+      height: 38px;
+      border-radius: 18px;
+      border: 1px solid var(--gray-border2);
+      padding: 24px 9px 0 10px;
+      padding: 9px 42px 10px 24px;
+
+      &::placeholder {
+        font-family: var(--default-font);
+        color: var(--tertiary-txt);
+        font-size: 13px;
+        line-height: 19.5px;
+        font-weight: 400;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid var(--blue-color);
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 0;
+      left: 302px;
+      cursor: pointer;
+    }
+  }
+
+  &Menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &-user {
+      cursor: pointer;
+    }
+
+    &-favorite {
+      position: relative;
+      cursor: pointer;
+
+      .favoriteNumber {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--blue-color);
+        font-size: 11px;
+        line-height: 16.5px;
+        font-weight: 600;
+        color: var(--secondary-txt);
+        user-select: none;
+      }
+    }
+
+    &-summary {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .summary__cart {
+        position: relative;
+        cursor: pointer;
+
+        .cartNumber {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: var(--blue-color);
+          font-size: 11px;
+          line-height: 16.5px;
+          font-weight: 600;
+          color: var(--secondary-txt);
+          user-select: none;
+        }
+      }
+
+      .summary__price {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.2px;
+      }
+    }
+  }
+}

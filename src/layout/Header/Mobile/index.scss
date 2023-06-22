@@ -1,0 +1,50 @@
+.header__mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72.5px;
+  padding: 15px;
+  border-bottom: 1px solid var(--gray-border);
+
+  &Logo {
+    width: 172px;
+    height: 25px;
+  }
+
+  &Menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &-search {
+      cursor: pointer;
+    }
+
+    &-cart {
+      position: relative;
+      cursor: pointer;
+
+      .cartNumber {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -4px;
+        left: 15px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--blue-color);
+        font-size: 11px;
+        line-height: 16.5px;
+        font-weight: 600;
+        color: var(--secondary-txt);
+        user-select: none;
+      }
+    }
+
+    &-burger {
+      cursor: pointer;
+    }
+  }
+}

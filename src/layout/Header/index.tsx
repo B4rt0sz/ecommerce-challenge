@@ -1,5 +1,12 @@
+import './index.scss'
+import { useIsDesktopDevice } from 'hooks/useMediaQuery'
+import HeaderDesktop from './Desktop'
+import HeaderMobile from './Mobile'
+
 const Header = () => {
-  return <div className='header'>header</div>
+  const isDesktop = useIsDesktopDevice()
+
+  return <div className='header'>{isDesktop ? <HeaderDesktop /> : <HeaderMobile />}</div>
 }
 
 export default Header
