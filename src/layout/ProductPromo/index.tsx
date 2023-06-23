@@ -41,7 +41,7 @@ const ProductPromo = () => {
 
   return (
     <div className='productPromo'>
-      <p>Nasze produkty</p>
+      <p className='productPromo__title'>Nasze produkty</p>
       <Swiper
         slidesPerView={isDesktop ? 4 : 1}
         spaceBetween={39}
