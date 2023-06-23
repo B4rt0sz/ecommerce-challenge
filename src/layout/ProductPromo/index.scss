@@ -1,2 +1,77 @@
 .productPromo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 35px;
+
+  @media (min-width: 886px) {
+    padding: 50px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+
+    @media (min-width: 886px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  &__carousel {
+    width: 320px;
+    cursor: pointer;
+
+    @media (min-width: 886px) {
+      width: 100%;
+    }
+
+    .carousel__img {
+      display: block;
+      max-height: 210px;
+      margin: 0 auto;
+      margin-bottom: 14px;
+    }
+
+    .carousel__title {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 36px;
+
+      @media (min-width: 886px) {
+        font-size: 13px;
+        line-height: 16.9px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .carousel__newPrice {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21px;
+
+      @media (min-width: 886px) {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23.4px;
+      }
+    }
+
+    .carousel__oldPrice {
+      font-size: 14px;
+      line-height: 18.2px;
+      text-decoration: line-through;
+      color: var(--tertiary-txt);
+    }
+
+    .swiper-button-prev {
+      color: var(--primary-txt);
+      height: 20px !important;
+    }
+    .swiper-button-next {
+      color: var(--primary-txt);
+    }
+  }
 }
