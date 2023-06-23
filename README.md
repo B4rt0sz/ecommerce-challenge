@@ -10,7 +10,7 @@ Main features:
 
 ## Live demo
 
-:computer: [DateTime Challenge](https://e-commerce-challenge.netlify.app/)
+:computer: [E-commerce Challenge](https://e-commerce-challenge.netlify.app/)
 
 ## Installation
 

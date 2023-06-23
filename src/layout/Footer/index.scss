@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 757px;
+  padding: 35px 15px;
+  background-color: var(--violet-bgc);
+  color: var(--secondary-txt);
+
+  @media (min-width: 886px) {
+    min-height: 440px;
+    padding: 0 10px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 886px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

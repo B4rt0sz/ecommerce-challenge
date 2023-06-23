@@ -1,0 +1,38 @@
+.footer__orders {
+  @media (max-width: 885.99px) {
+    width: 100%;
+    align-self: flex-start;
+    padding-top: 20px;
+    padding-bottom: 31px;
+    border-bottom: 1px solid var(--secondary-txt);
+  }
+
+  @media (min-width: 886px) {
+    height: 299.01px;
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+    @media (min-width: 886px) {
+      font-weight: 700;
+      line-height: 20.8px;
+      margin-bottom: 22px;
+    }
+  }
+  &-options {
+    &-item {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      @media (min-width: 886px) {
+        margin-bottom: 15.4px;
+      }
+    }
+  }
+}
