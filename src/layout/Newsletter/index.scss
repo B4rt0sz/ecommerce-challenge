@@ -1,0 +1,21 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 53px;
+
+  @media (min-width: 886px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 0px;
+  }
+
+  &__img {
+    display: block;
+    min-width: 200px;
+    max-height: 301px;
+
+    @media (min-width: 886px) {
+      max-height: 351px;
+    }
+  }
+}
