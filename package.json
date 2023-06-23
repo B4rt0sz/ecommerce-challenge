@@ -19,6 +19,7 @@
     "react-scripts": "5.0.1",
     "react-simple-image-slider": "^2.4.1",
     "sass": "^1.63.5",
+    "swiper": "^9.4.1",
     "typescript": "^4.9.5",
     "zustand": "^4.3.8"
   },
