@@ -8,6 +8,7 @@ import productImg1 from './images/product1.png'
 import productImg2 from './images/product2.png'
 import productImg3 from './images/product3.png'
 import productImg4 from './images/product4.png'
+import CartIcon from 'components/icons/CartIcon'
 
 const productList = [
   {
@@ -55,6 +56,9 @@ const ProductPromo = () => {
             <p className='carousel__title'>{item.title}</p>
             <p className='carousel__newPrice'>{item.newPrice}</p>
             <p className='carousel__oldPrice'>{item.oldPrice}</p>
+            <div className='carousel__cart'>
+              <CartIcon />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

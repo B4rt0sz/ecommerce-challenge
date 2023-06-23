@@ -21,6 +21,7 @@
   }
 
   &__carousel {
+    position: relative;
     width: 320px;
     cursor: pointer;
 
@@ -64,6 +65,25 @@
       line-height: 18.2px;
       text-decoration: line-through;
       color: var(--tertiary-txt);
+    }
+
+    .carousel__cart {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: var(--blue-color);
+      border-radius: 50%;
+
+      svg {
+        path {
+          fill: var(--secondary-txt);
+        }
+      }
     }
 
     .swiper-button-prev {
