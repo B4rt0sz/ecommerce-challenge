@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ContainerVariants, variantMenu } from './MotionVariants'
 import BurgerIcon from 'components/icons/BurgerIcon'
 import { useAppState } from 'store/store'
-import { useScrollBlock } from 'hooks'
 import ArrowRightIcon from 'components/icons/ArrowRightIcon'
 import Search2Icon from 'components/icons/Search2Icon'
 import { useRef } from 'react'
@@ -28,7 +27,6 @@ const menuListMobile = [
 const MenuMobile = ({ menuList }: MenuMobileProps) => {
   const { mobileMenuState, setMobileMenuState } = useAppState()
   const ref = useRef<HTMLInputElement>(null)
-  const [allowScroll] = useScrollBlock()
 
   const list = menuList.map((item, index) => (
     <li key={index} className='mobileMenuContent__item'>
@@ -87,14 +85,12 @@ const MenuMobile = ({ menuList }: MenuMobileProps) => {
               exit='exit'
               onClick={() => {
                 setMobileMenuState(false)
-                allowScroll()
               }}
             >
               <BurgerIcon
                 className='menu__mobile-burger'
                 onClick={() => {
                   setMobileMenuState(false)
-                  allowScroll()
                 }}
               />
             </motion.div>
